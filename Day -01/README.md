@@ -2,7 +2,7 @@
 
 ----
 
-# Write a blog on Difference between HTTP1.1 vs HTTP2.
+## Write a blog on Difference between HTTP1.1 vs HTTP2.
 
     •	HTTP2 loads faster than HTTP1.1
     
@@ -19,7 +19,7 @@
     •	HTTP2 is secured by default.
     
 
-# Write a blog about objects and its internal representation in JavaScript. 
+## Write a blog about objects and its internal representation in JavaScript. 
 
     •	Object: An Object is a collection of properties and methods. (Object is also a Data Type in JavaScript. 
                     It can contain properties of all the other types starting from Number, String, Boolean, Arrays, and even other Objects)
