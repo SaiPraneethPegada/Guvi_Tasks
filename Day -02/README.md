@@ -72,7 +72,6 @@
 		
 		- querySelectorAll(): It returns a collection of an element’s child elements that matches a specified CSS selector(s) in the document
 
-----
 
 ## Properties of Window:
 
