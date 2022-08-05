@@ -18,7 +18,7 @@
 # Write a blog about objects and its internal representation in JavaScript. 
 
     •	Object: An Object is a collection of properties and methods. (Object is also a Data Type in JavaScript. 
-        It can contain properties of all the other types starting from Number, String, Boolean, Arrays, and even other Objects)
+                    It can contain properties of all the other types starting from Number, String, Boolean, Arrays, and even other Objects)
    
     •	These properties are written in the form of Key-Value pair.
     
