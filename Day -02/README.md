@@ -1,4 +1,4 @@
-# TASK-2
+# Day_02_Task
 
 ## Write a blog on difference between Document and Window Object.
 
