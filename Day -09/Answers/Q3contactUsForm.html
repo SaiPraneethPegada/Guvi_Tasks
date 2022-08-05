@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_Us Form - Q3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        .req {
+            color: red;
+        }
+
+        .box {
+            display: flex;
+            background-color: white;
+            padding: 20px 50px 50px 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .box-part {
+            border: 2px solid black;
+            max-width: 550px;
+            margin:  0 auto;
+        }
+
+        .text {
+            padding: 12px 20px;
+            color: black;
+            margin: 10px;
+            font-family:cursive;
+        }
+
+        .text .shape {
+            width: 60%;
+        }
+
+        .shape {
+            width: 200px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="box">
+            <div class="container-md">
+                <div class="col-lg-12">
+                    <div class="box-part">
+                        <h1 class="text-center" style="color: black;"><u>Contact Us</u></h1>
+                        <div class="text">
+                            <label style="font-size: large;" for="fname">First Name <span
+                                    class="req">*</span></label><br>
+                            <input class="shape" type="text" name="" id="fname" required>
+                        </div>
+                        <div class="text">
+                            <label style="font-size: large;" for="lname">Last Name <span
+                                    class="req">*</span></label><br>
+                            <input class="shape" type="text" name="" id="lname" required>
+                        </div>
+
+                        <div class="text">
+                            <label style="font-size: large;" for="mail">Email <span class="req">*</span></label><br>
+                            <input class="shape" type="email" name="" id="mail" required>
+                        </div>
+
+                        <div class="text">
+                            <label style="font-size: large;" for="sub">Subject <span class="req">*</span></label><br>
+                            <input class="shape" type="text" name="" id="sub" required>
+                        </div>
+
+                        <div class="text" style="padding-bottom: 0px; margin-bottom: 0px;">
+                            <label style="font-size: large;" for="msg">Message <span class="req">*</span></label><br>
+                            <input style="height: 100px;" class="shape" type="text" name="" id="msg" required>
+                        </div>
+
+                        <div class="text" style="padding-top:0px; margin-top: 0px;"><span class="req">*</span>marked
+                            fields are mandatory.</div>
+
+                        <div class="text-center" style="padding-bottom: 10px;">
+                            <input type="submit" name="" id="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
