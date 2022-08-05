@@ -1,0 +1,154 @@
+# Day_04_Task
+
+### 1.	How to compare two JSON have the same properties without order?
+
+          var obj1 = { name: "Person 1", age:5 };
+          var obj2 = { age:5, name: "Person 1" };
+          var same=true;
+          if(Object.keys(obj1).length==Object.keys(obj2).length){
+              for(var key in obj1) { 
+                  if(obj1[key] == obj2[key]) {
+                      continue;
+                  }
+                  else {
+                      same=false;
+                      break;
+                  }
+              }
+          }
+          else {
+              same=false;
+          }
+          console.log(`Properties are equal : ${same}`);
+          //Prints: Properties are equal : true
+          
+          
+### 2.	Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console.
+
+          var request = new XMLHttpRequest();
+          request.open('GET','https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json');
+          request.send();
+          request.onload=function(){
+              var data = JSON.parse(request.response);
+              //console.log(data);
+              for (var i = 0; i<data.length; i++){
+                      console.log(data[i].flag);
+              }
+          }
+
+
+
+### 3.	Use the same rest countries and print all countries name, region, sub region and population.
+
+          var request = new XMLHttpRequest();
+          request.open('GET','https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json');
+          request.send();
+          request.onload=function(){
+              var data = JSON.parse(request.response);
+              //console.log(data);
+              for (var i = 0; i<data.length; i++){
+                console.log(data[i].name, data[i].region, data[i].subregion,    data[i].population);
+              }
+          }
+
+### 4.	Swapping 2 numbers;
+
+          let a = 2;
+          let b = 6;
+          [b,a] = [a,b];
+          console.log(a,b);
+          5.	Power of any number x ^ y.
+          let a = 5;
+          let b = 6;
+          console.log(Math.pow(a,b))
+          (or)
+          console.log(a**b);
+
+
+### 6.	Display the asterisk pattern as shown below(No loop needed):
+    *****
+    *****
+    *****
+    *****
+    *****
+          let s = "*****";
+          console.log(s);
+          console.log(s);
+          console.log(s);
+          console.log(s);
+          console.log(s);
+
+
+
+### 7.	Calculate electricity bill?
+
+        For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+        let consumed_units = 100;
+        let total_consumedUnits = (consumed_units*24*30)/1000;
+        let total_cost = total_consumedUnits * 10;
+        console.log(total_cost)
+
+
+### 8.	var myarray = [11,22,33,44,55]
+
+        write a code to count the elements in the array. Don’t use length property
+        var a = [11,22,33,44,55];
+        function arrayLength(a){
+        var length = 0;
+        while(a[length]!==undefined){
+        length++;
+        }
+        return length;
+        }
+        console.log(arrayLength(a));
+
+
+
+### 9.	Write a loop that makes seven calls to console.log to output the following triangle:
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+  
+        let triangle = "#"
+        do {
+        console.log(triangle);
+        triangle = triangle + "#";
+        } while (triangle.length !== 8);
+
+
+### 10.	 Iterate through the string array and print it contents
+
+        var strArray= ["<option>Jazz</option>","<option>Blues</option>","<option>New Age</option>","<option>Classical</option>","<option>Opera</option>"]
+        for( let i=0; i<strArray.length; i++) {
+            console.log(strArray[i]);
+        }
+
+### 11.	Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+
+        let friends = ['Mari','MaryJane','CaptianAmerica','Munnabai','Jeff','AAK chandran'];
+        friends.splice(0,1,"Munnabai")
+        console.log(friends);
+
+### 12.	Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+
+        let friends = ['Mari','MaryJane','CaptianAmerica','Munnabai','Jeff','AAK chandran'];
+        for (let i=0; i<friends.length; i++){
+            if(friends[i] === "CaptianAmerica"){
+                break;
+            }
+            console.log(friends[i]) 
+        }
+
+
+
+### 13.	Concat all the names the friends array and return as comma “,” seperated string.
+
+        let friends1 = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+        let friends2 = ["Gabbar","Rajinikanth","Mass","Spiderman","Jeff","ET"];
+        console.log(`${friends1},${friends2}`)
+
+
