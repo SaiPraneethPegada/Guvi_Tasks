@@ -183,7 +183,7 @@
           })();
           
           
-####   h.	 Rotate an array by k times and return the rotated array   
+####   h.	 Rotate an array by k times   
 
           var arr = [1, 2, 3, 4, 5];
 
@@ -206,6 +206,69 @@
 ----
 
 ## 3 . Do the below programs in Arrow functions.
+
+#### a.	Print odd numbers in an array...........
+
+        var arr = [1, 2, 3, 4, 5, 6];
+
+        var oddnum = () => {
+          return arr.filter((x) => x % 2 !== 0);
+        };
+        console.log(oddnum());
+
+
+#### b.	Convert all the strings to title caps in a string array
+
+        var strings = ["dhoni", "jadeja", "sam", "watson", "faf"];
+
+        var titlecase = () => {
+          return strings.map(
+            (string) => string.charAt(0).toUpperCase() + string.slice(1)
+          );
+        };
+        console.log(titlecase());
+
+#### c.	Sum of all numbers in an array
+
+        var arr = [1, 2, 3, 4, 5, 6];
+
+        var sum = () => {
+          return arr.reduce((num, total) => {
+            return (total = num + total);
+          });
+        };
+        console.log(sum());
+
+
+#### d.	Return all the prime numbers in an array
+
+        var arr = [2, 3, 4, 5, 6, 7, 8, 9];
+
+        var Primes = () => {
+          return arr.filter((num) => {
+            var status = true;
+            for (var i = 2; i < num; i++) {
+              if (num % i == 0) {
+                status = false;
+                break;
+              }
+            }
+            if (status == true) {
+              return num;
+            }
+          });
+        };
+        console.log(Primes());
+        
+#### e.	Return all the palindromes in an array
+
+        var arr = ["eye", "cat", "racecar", "mam", "camera", "level"];
+
+        var palindromes = () => {
+          return arr.filter((string) => string == string.split("").reverse().join(""));
+        };
+        console.log(palindromes());
+
 
 
 
