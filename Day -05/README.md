@@ -93,14 +93,14 @@
 
         (function () {
           var result = arr.filter((num) => {
-            var status = true;
+            var isPrime = true;
             for (var i = 2; i < num; i++) {
               if (num % i == 0) {
-                status = false;
+                isPrime = false;
                 break;
               }
             }
-            if (status == true) {
+            if (isPrime == true) {
               return num;
             }
           });
