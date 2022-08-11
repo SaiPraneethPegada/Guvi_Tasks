@@ -22,12 +22,12 @@
 
 ####  b. Convert all the strings to title caps in a string array
          
-        var strings = ["dhoni", "jadeja", "sam", "watson", "faf"];
+        var array = ["chennai", "kerala", "telangana", "mumbai", "delhi"];
 
         // a.Anonymous function
 
         var titlecase = function () {
-          return strings.map(
+          return array.map(
             (string) => string.charAt(0).toUpperCase() + string.slice(1)
           );
         };
@@ -37,7 +37,7 @@
 
         (function () {
           console.log(
-            strings.map((string) => string.charAt(0).toUpperCase() + string.slice(1))
+            array.map((string) => string.charAt(0).toUpperCase() + string.slice(1))
           );
         })();
         
@@ -110,7 +110,7 @@
         
 ####  e.	Return all the palindromes in an array  
 
-          var arr = ["eye", "cat", "racecar", "mam", "camera", "level"];
+          var arr = ["malayalam", "dog", "racecar", "eve", "camera", "level"];
 
           // a.Anonymous function
 
@@ -219,10 +219,10 @@
 
 #### b.	Convert all the strings to title caps in a string array
 
-        var strings = ["dhoni", "jadeja", "sam", "watson", "faf"];
+       var array = ["chennai", "kerala", "telangana", "mumbai", "delhi"];
 
         var titlecase = () => {
-          return strings.map(
+          return array.map(
             (string) => string.charAt(0).toUpperCase() + string.slice(1)
           );
         };
@@ -262,7 +262,7 @@
         
 #### e.	Return all the palindromes in an array
 
-        var arr = ["eye", "cat", "racecar", "mam", "camera", "level"];
+         var arr = ["malayalam", "dog", "racecar", "eve", "camera", "level"];
 
         var palindromes = () => {
           return arr.filter((string) => string == string.split("").reverse().join(""));
