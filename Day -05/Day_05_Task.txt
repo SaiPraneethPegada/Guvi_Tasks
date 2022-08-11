@@ -1,8 +1,8 @@
-# Day_05_task
+// Day_05_task
 
-## 1.	Do the below programs in anonymous function & IIFE
+// 1. Do the below programs in anonymous function & IIFE
 
-#### a. Print odd numbers in an array...........
+// a. Print odd numbers in an array...........
 
         var arr = [1, 2, 3, 4, 5, 6];
 
@@ -20,7 +20,7 @@
         })();
        
 
-####  b. Convert all the strings to title caps in a string array
+// b. Convert all the strings to title caps in a string array
          
         var array = ["chennai", "kerala", "telangana", "mumbai", "delhi"];
 
@@ -42,7 +42,7 @@
         })();
         
         
-####  c. Sum of all numbers in an array 
+// c. Sum of all numbers in an array 
 
         var arr = [1, 2, 3, 4, 5, 6];
 
@@ -66,7 +66,7 @@
         })();
 
         
-####  d. Return all the prime numbers in an array 
+// d. Return all the prime numbers in an array 
 
         var arr = [2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -108,7 +108,7 @@
         })();
         
         
-####  e.	Return all the palindromes in an array  
+// e. Return all the palindromes in an array  
 
           var arr = ["malayalam", "dog", "racecar", "eve", "camera", "level"];
 
@@ -128,7 +128,7 @@
           })();
           
           
-####   f.	Return median of two sorted arrays of same size 
+// f. Return median of two sorted arrays of same size 
 
           var a = [2, 5, 1, 4, 9];
           var b = [20, 6, 8, 12, 7];
@@ -164,7 +164,7 @@
           })();
           
           
-####  g.	Remove duplicates from an array
+// g. Remove duplicates from an array
 
           var arr = [1, 2, 3, 3, 1, 2, 6, 5, 7, 6];
 
@@ -183,7 +183,7 @@
           })();
           
           
-####   h.	 Rotate an array by k times   
+// h. Rotate an array by k times   
 
           var arr = [1, 2, 3, 4, 5];
 
@@ -205,9 +205,9 @@
 
 ----
 
-## 3 . Do the below programs in Arrow functions.
+// 3 . Do the below programs in Arrow functions.
 
-#### a.	Print odd numbers in an array...........
+// a. Print odd numbers in an array...........
 
         var arr = [1, 2, 3, 4, 5, 6];
 
@@ -217,7 +217,7 @@
         console.log(oddnum());
 
 
-#### b.	Convert all the strings to title caps in a string array
+// b. Convert all the strings to title caps in a string array
 
        var array = ["chennai", "kerala", "telangana", "mumbai", "delhi"];
 
@@ -228,7 +228,7 @@
         };
         console.log(titlecase());
 
-#### c.	Sum of all numbers in an array
+// c. Sum of all numbers in an array
 
         var arr = [1, 2, 3, 4, 5, 6];
 
@@ -240,7 +240,7 @@
         console.log(sum());
 
 
-#### d.	Return all the prime numbers in an array
+// d. Return all the prime numbers in an array
 
         var arr = [2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -260,7 +260,7 @@
         };
         console.log(Primes());
         
-#### e.	Return all the palindromes in an array
+// e. Return all the palindromes in an array
 
          var arr = ["malayalam", "dog", "racecar", "eve", "camera", "level"];
 
