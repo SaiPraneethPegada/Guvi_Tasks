@@ -16,6 +16,8 @@ class Movie {
 }
 const favMovie = new Movie("Casino Royale", "Eon Productions" , "PG13")
 console.log(favMovie);
+
+// Output : Movie { title: 'Casino Royale', studio: 'Eon Productions', rating: 'PG13' }
 ```
 
 
@@ -42,10 +44,10 @@ class circle {
   }
 }
 let a = new circle(1.0, "red");
-console.log(a.getradius());
-console.log(a.getcolor());
-console.log(a.getarea());
-console.log(a.getcircumference());
+console.log(a.getradius());         // Prints : 1
+console.log(a.getcolor());          // Prints : red
+console.log(a.getarea());           // Prints : 3.1412
+console.log(a.getcircumference());  // Prints : 6.2824
 ```
 
 ### 3.	Write a “person” class to hold all the details.
@@ -64,7 +66,15 @@ class Person {
 
 const details = new Person("Sai Praneeth", "Pegada" , "13 Nov" , "H.no-53B Pranahitha Colony" , "Full stack", 0)
 
-console.log(details);
+console.log(details);       
+
+/* Output : Person {
+  firstName: 'Sai Praneeth',
+  lastName: 'Pegada',
+  DOB: '13 Nov',
+  address: 'H.no-53B Pranahitha Colony',
+  jobTitle: 'Full stack',
+  yearsOfExperience: 0 } */
 ```
 
 
@@ -82,5 +92,5 @@ class uberprice{
 
 const price = new uberprice(100,10,200); 
 
-console.log(price);
+console.log(price);         // Output : uberprice { baseprice: 100, kilometre: 10, tax: 200 }
 ```
