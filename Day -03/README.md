@@ -9,21 +9,29 @@
           console.log(person[i]);
           }
 
+            //Output:   { fname: 'John', lname: 'Doe', age: 25 } { fname: 'Joseph', lname: 'Doe', age: 28 }
+
         //for-in loop:
           for (var i in person) {
           console.log(person[i]);
           }
+
+            //Output:   { fname: 'John', lname: 'Doe', age: 25 } { fname: 'Joseph', lname: 'Doe', age: 28 }
 
         //for of loop:
           for (const key of person) {
           console.log(key);
           }
 
+            //Output:   { fname: 'John', lname: 'Doe', age: 25 } { fname: 'Joseph', lname: 'Doe', age: 28 }
+
         //forEach loop:
           person.forEach(function(key) {
           console.log(key.fname, key.lname);
           });
 
+            //Output:   John Doe  Joseph Doe         
+            
 
 ###  2.	Create your own resume data in JSON format
 
